@@ -1,0 +1,51 @@
+export const CANVAS_WIDTH = 1280;
+export const CANVAS_HEIGHT = 720;
+
+export const PHYSICS = {
+  // Horizontal movement (crisp Hollow Knight feel)
+  MOVE_SPEED: 340,
+  GROUND_ACCEL: 3800,
+  GROUND_DECEL: 4200,
+  AIR_ACCEL: 2900,
+  AIR_DECEL: 2400,
+
+  // Vertical movement & jumping
+  GRAVITY: 1850,
+  FALL_GRAVITY_MULT: 1.25,
+  MAX_FALL_SPEED: 920,
+  JUMP_VELOCITY: -660,
+  DOUBLE_JUMP_VELOCITY: -600,
+  JUMP_CUT_MULT: 0.48,
+  COYOTE_TIME: 0.1,
+  JUMP_BUFFER_TIME: 0.12,
+
+  // Wall slide & wall jump (Mantis Claw)
+  WALL_SLIDE_SPEED: 155,
+  WALL_JUMP_VX: 380,
+  WALL_JUMP_VY: -630,
+  WALL_JUMP_LOCK: 0.14,
+
+  // Dash (Mothwing Cloak)
+  DASH_SPEED: 840,
+  DASH_DURATION: 0.17,
+  DASH_COOLDOWN: 0.42,
+
+  // Nail combat
+  SLASH_DURATION: 0.13,
+  SLASH_COOLDOWN: 0.27,
+  SLASH_DAMAGE: 1,
+  POGO_VELOCITY: -610,
+  SIDE_RECOIL_VX: 180,
+  HITSTOP_HIT: 0.045,
+  HITSTOP_HURT: 0.11,
+
+  // Health & Soul
+  MAX_MASKS: 5,
+  MAX_SOUL: 99,
+  SOUL_PER_HIT: 11,
+  FOCUS_COST: 33,
+  FOCUS_TIME: 0.85,
+  INVULN_DURATION: 1.15,
+  HURT_KNOCKBACK_X: 310,
+  HURT_KNOCKBACK_Y: -390,
+};
